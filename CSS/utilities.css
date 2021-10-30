@@ -1,0 +1,517 @@
+
+
+
+/* Text Colors */
+
+.text-primary {
+    color: rgb(245, 61, 51);
+}
+
+.text-secondary {
+    color: #bbb;
+}
+
+/* Buttons */
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: rgb(245, 61, 51);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary, .bg-primary {
+  background: rgb(245, 61, 51);
+  color: #fff;
+}
+
+.btn-secondary, .bg-secondary {
+  background: #7bdaf3;
+  color: #fff;
+}
+
+.btn-dark, .bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-light, .bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Policy page btns - container */
+.center-policy {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: #f4f4f4;
+}
+
+/* Styling of btns - policy page */
+.btn-policy {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 15px 35px;
+  color: #fff;
+  background-color: rgb(245, 61, 51);
+  border-radius: 5px;
+  margin: 35px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Services page - Btns */
+.btn-outline {
+  background: #333;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 10px 40px;
+}
+
+#inline-btn {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* Flex items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.flex-items > div {
+  padding: 30px;
+}
+
+/* Flex columns */
+
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Flex columns - services list */
+.flex-columns .row ul.a {
+  list-style-type: disc;
+  padding: 20px;
+  margin: 10px; 
+}
+
+.flex-columns .row ul.a-center {
+  list-style-type: square;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  align-items: left;
+  font-size: 1.2rem;
+}
+
+.flex-columns .column .a-center {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 45px;
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 100;
+  border-bottom: rgb(245, 61, 51) 5px solid;
+}
+
+.flex-columns h4 {
+  margin: 20px, 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+/* Section Header */
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/* Flex Grid */
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin: auto;
+}
+
+/* services page */
+.column .note {
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  font-weight: 300;
+}
+
+/* cards */
+.masthead {
+  background-color: #333;
+  height: 105px;
+}
+
+#header-title {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+ 
+.card-row {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; 
+  align-items: center; 
+  flex-wrap: wrap;
+}
+
+.card-column a {
+  color: #fff;
+  font-size: 13px;
+  border-radius: 3px;
+  background: #bbb;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.card-column #black a {
+  background: #333;
+  color: #bbb;
+}
+
+/* flip card container - holds the cards inside */
+.flip-card {
+  background-color: transparent;
+  width: 400px; 
+  height: 400px;
+  perspective: 1000px;
+  margin: 30px;
+}
+
+/* Container - positions front & back side  */
+.flip-card-inner {
+  position: relative;
+  width: 420px;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 5px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  position: absolute;
+  width: 420px;
+  height: 400px;
+  font-size: 16px;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.flip-card-inner .red {
+  background-color: rgb(245, 61, 51);
+  color: white;
+}
+
+.flip-card-inner .red h2 {
+  border-bottom: white 3px solid;
+  padding-bottom: 10px;
+}
+
+.flip-card-inner .grey {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-inner .grey h2 {
+  border-bottom: black 3px solid;
+  padding-bottom: 10px;
+}
+
+.flip-card-inner .black, .black {
+  background-color: #333;
+  color: white;
+}
+
+.flip-card-inner .black h2 {
+  border-bottom: white 3px solid;
+  padding-bottom: 10px;
+}
+
+.flip-card-front h2 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding-bottom: 5px;
+  border-bottom: #333 2px solid;
+  line-height: 30px;
+}
+
+.flip-card-front h4 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 3px;
+  line-height: 28px;
+} 
+
+.card-column .a, .card-column .b, .bg-light {
+  list-style-type: square;
+  text-align: left;
+  padding: 15px;
+}
+
+.card-column .center, .card-column .center {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+} 
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+} 
+
+@media screen and (min-width: 992px) {
+  .card-row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: auto;
+  }
+
+  /* .flip-card:hover {
+    transform: none;
+  } */
+
+  .flip-card-front {
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    transform: none;
+  }
+
+  .flip-card-back {
+    position: absolute;
+    width: 300px;
+    padding: 0 5px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* transform: none; */
+  }
+} 
+
+#about-me {
+  background-color: #bbb;
+  padding: 20px;
+  text-align: center;
+}
+
+#bg-dark h1 {
+  color:black;
+  font-weight: bolder;
+  line-height: 1.2;
+  padding: 15px;
+  font-size: 2.2rem;
+  text-decoration: solid underline rgb(245, 61, 51);
+  text-underline-offset: 1rem;
+  text-decoration-thickness: 4px;
+}
+
+#bg-dark h3 {
+  color: black;
+  font-weight: bolder;
+  line-height: 1.2;
+  font-size: 1.2rem;
+}
+
+#about-me .flex-items {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  color: white;
+  background-color: #333;
+  opacity: 0.8;
+  font-size: 1rem;
+  margin: 20px;
+  border-radius: 10px;
+} 
+
+ .testimonial h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.testimonial .smaller {
+  font-size: 16.5px;
+}
+
+#about-me .flex-items .client {
+  font-size: 13.5px;
+  color: white;
+}
+
+/* my media queries */
+
+/* @media screen and (min-width: 340px) {
+  .card-column {
+    max-width: calc(55% - 1rem);
+  }
+}
+
+@media screen and (min-width: 800px) {
+ .card-column {
+   max-width: calc(25% - 1rem);
+  }
+
+  .centered {
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .centered {
+      max-width: 840px;
+  }
+}  */
+
+
+/* float 4 equal columns side by side */
+/* .card-column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+} */
+
+/* clear floats after the columns */
+/* .card-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}  */
+
+/* Remove extra left and right margins, due to padding */
+/* .card-row {
+  margin: 0 -10px;
+}  */
+
+/* Responsive columns */
+/* @media screen and (max-width:400px) {
+  .card-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <link rel="stylesheet" href="/CSS/utilities.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <title>Services | JM Interactive</title>
+</head>
+
+<body id="home">
+
+  <header class="hero blog">
+      
+    <div id="navbar" class="navbar top">
+        
+      <h1 class="logo">
+          
+        <a href="index.html">
+          
+          <span class="text-primary"><i class="far fa-heart"></i> JM</span>
+          
+          interactive
+          
+        </a>
+      </h1>
+        
+      <nav>
+            
+        <ul>
+                  
+          <li><a href="index.html">Home</a></li>
+        
+          <li><a href="#">Services</a></li>
+                  
+          <li><a href="pricing.html">Pricing</a></li>
+                  
+          <li><a href="policy.html">FAQ</a></li>
+                  
+          <li><a href="index.html#contact">Contact</a></li>
+            
+        </ul>
+        
+      </nav>
+      
+    </div>
+
+      <div class="content">
+           
+        <h1>My Services</h1>
+      
+      </div>
+
+  </header>
+   
+  <main> 
+      
+    <!-- Web Dev -->
+    <article class="flex-columns">
+      
+      <div class="row">
+
+        <div class="column">
+          
+          <div class="column-1">
+            
+            <img src="images/blog/blog1.jpg" alt="">
+          
+          </div>
+        
+        </div>
+
+        <div class="column">
+
+          <div class="column-2 bg-light">
+            
+            <h2>Web Development</h2>
+            
+            <p class="note">All web development projects receive a free 30-minute consultation
+            </p>
+           
+            <p>
+              <ul class="a">
+
+                <li>Add functionality to website</li>
+
+                <li>Add responsive design to website</li>
+
+                <li>Create new multi-page website</li>
+
+                <li>Create new single page website</li>
+
+                <li>Enhance current website</li>
+
+                <li>Update styling & layout of website</li>
+
+                <li>User Experience Improvements</li>
+
+                <li>Website usability testing & proof reading</li>
+
+              </ul> 
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+    <!-- Gig Work -->
+    <article class="flex-columns flex-reverse">
+      
+      <div class="row">
+
+        <div class="column">
+          
+          <div class="column-1">
+            
+            <img src="images/blog/blog2.jpg" alt="">
+          
+          </div>
+       
+        </div>
+
+        <div class="column">
+
+          <div class="column-2 bg-dark">
+            
+            <h2>Gig Work</h2>
+            
+            <p class="note">All tasks require one-hour minimum</p>
+            
+            <p>
+
+              <ul class="a">
+
+                <li>Assist w/ misc errands (pharmacy, returns, cleaners)</li>
+
+                <li>Basic training: zero to hero - iPhone, iPad, iMac</li>
+
+                <li>Cleanup & organization of desktop (remote)</li>
+
+                <li>Create flyers, excel spreadsheets & marketing pieces</li>
+
+                <li>Driver for adults (airport, appointments, work)</li>
+
+                <li>Driver for kids (activities, school, sports)</li>
+
+                <li>Editing/proofing (correspondence, email, paper, website)</li>
+
+                <li>Email database cleanup & maintenance</li>
+
+                <li>Fashion tips on a budget: look bling 4 less cha-ching</li>
+
+                <li>Password organization & management</li>
+
+                <li>Remote miscellaneous computer work</li>
+
+                <li>Research (business-related, products, projects, EDD)</li>
+
+                <li>Set up miscellaneous online user accounts (bank, cc, utilities)</li>
+                <li>Virtual administrative assistant work</li>
+
+              </ul> 
+
+            </p>
+          
+          </div>
+
+        </div>
+      
+      </div>
+    
+    </article>
+
+    <!-- Monthly Services -->
+    <article class="flex-columns">
+      
+      <div class="row">
+
+        <div class="column">
+          
+          <div class="column-1">
+            
+            <img src="images/blog/blog3.jpg" alt="">
+          
+          </div>
+        
+        </div>
+
+        <div class="column">
+          
+          <div class="column-2 bg-light">
+            
+            <h2>Monthly Services</h2>
+            
+            <p class="note">All monthly services will have a flat fee, with a recurring monthly payment </p>
+            
+            <p>
+              
+              <ul class="a">
+
+                <li>Backend database management</li>
+
+                <li>Web host platform patching</li>
+
+                <li>Website maintenance</li>
+
+              </ul> 
+            
+            </p>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  </main>
+
+  <!-- Footer - same -->
+  <footer class="footer bg-dark">
+
+    <div class="social">
+
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+
+        <a href="#"><i class="fab fa-telegram fa-2x"></i></a>
+
+    </div>
+
+    <p> &copy; 2021 JMinteractive.  All Rights Reserved.</p>
+
+  </footer>
+
+  <script>
+
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function() {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if(!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function() {
+            navbar.style.transform = 'translateY(0)';  
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+
+    </script>
+
+</body>
+
+</html>
