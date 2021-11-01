@@ -348,7 +348,7 @@
                         <h4>Thank you for your interest in working with Julie Morgan Interactive!  Please fill out the form below with all pertinent information about your needs.  I will follow up with you within 24 hours, to schedule a consultation OR for a quicker response, please text me.</h4>
 
                         <!-- Form Info -->
-                        <form name="contact" method="POST" data-netlify="true" action="" class="callback-form">
+                        <form class="callback-form" name="contact" netlify>
 
                             <div class="form-control">
                                 
@@ -356,26 +356,13 @@
 
                                 <input type="text" name="name" id="name" placeholder="Name">
                         
-                            </div>
-
-                        
-                            <div class="form-control">
-                                
                                 <label for="email"></label>
                            
-                                <input type="email" name="email" id="email" placeholder="Email">
-
-                            </div>
-
-                            <div class="form-control">
+                                <input type="text" name="email" id="email" placeholder="Email">
 
                                 <label for="phone"></label>
 
                                 <input type="text" name="phone" id="phone" placeholder="Phone #">
-
-                            </div>
-
-                            <div class="form-control">
 
                                 <label for="subject"></label>
 
@@ -383,11 +370,11 @@
 
                             </div>
 
-                            <div class="form-control">
+                            <textarea placeholder="Add details here.  Please include date and time of service needed." name="message"></textarea>
 
-                                <textarea placeholder="Add details here.  Please include date and time of service needed." name="message"></textarea>
+                            <div class="center-policy">
 
-                                <input type="submit" value="Submit" id="submit" class="btn">
+                                <button type="submit" class="btn-form">Submit</button>
 
                             </div>
 

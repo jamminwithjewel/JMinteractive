@@ -87,6 +87,19 @@
   flex-direction: row;
 }
 
+.btn-form {
+  cursor: pointer;
+  padding: 15px 35px;
+  color: #fff;
+  background-color: rgb(245, 61, 51);
+  border-radius: 5px;
+  border: none;
+  margin: 35px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 
 /* Flex items */
 .flex-items {
