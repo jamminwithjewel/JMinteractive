@@ -29,7 +29,7 @@ h1, h2 {
 }
 
 .content h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 700;
     line-height: 1.2;
     padding: 35px;
@@ -109,7 +109,7 @@ img {
 .navbar .logo {
     font-weight: 400;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
 }
 
 .navbar .logo span i {
@@ -321,8 +321,8 @@ img {
 
 
 /* Media Queries: Mobile */
-@media(max-width: 768px) {
-    .hero.blog {
+@media(max-width: 1000px) {
+    .hero .blog {
         background: url('../images/home/blog.jpg') no-repeat center center/cover;
         height: 20vh;
     }
@@ -340,13 +340,20 @@ img {
     }
 
     .navbar.top {
-        background: none; 
+        background: transparent; 
     }
 
-    .content h1, #faq h1, #pricing h1 {
-        font-size: 1.6rem;
+    .navbar .logo {
+        font-weight: 400;
+        color: #fff;
+        font-size: 2.3rem;
+    }
+
+    .content h1, #faq h1, #pricing h1, .content h3, .btn {
+        /* font-size: 1.6rem;
         display: block;
-        margin-top: 60px;
+        margin-top: 60px; */
+        display: none;
     }
 
     .flex-items {
