@@ -344,9 +344,9 @@ img {
     }
 
     .navbar .logo {
-        font-weight: 400;
+        font-weight: 300;
         color: #fff;
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 
     .content h1, #faq h1, #pricing h1, .content h3, .btn {
