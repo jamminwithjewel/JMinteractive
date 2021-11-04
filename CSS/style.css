@@ -212,6 +212,11 @@ img {
     font-size: 2rem;
     font-weight: 400;
 }
+
+.heart i {
+    font-size: 2rem;
+    font-weight: 400;
+}
  
 
 /* Callback form */
@@ -449,7 +454,23 @@ img {
       #contact .my-info {
         font-size: 13px;
       }
-}
+    }
+
+      @media (max-width: 625px) {
+        /* heart logo */
+        #heart i {
+            display: none;
+        }
+
+        .btn-outline {
+            background: #333;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+          }
+      }
+
 
 
 
