@@ -362,12 +362,12 @@
   text-align: center;
 } 
 
-@media screen and (min-width: 992px) {
+@media (max-width: 1364px) {
   .card-row {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    height: auto;
+    height: fit-content;
   }
 
   /* .flip-card:hover {
@@ -382,7 +382,7 @@
 
   .flip-card-back {
     position: absolute;
-    width: 300px;
+    width: 200px;
     padding: 0 5px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -390,6 +390,7 @@
   }
 } 
 
+/* testimonials */
 #about-me {
   background-color: #bbb;
   padding: 20px;

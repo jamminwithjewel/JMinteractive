@@ -33,14 +33,14 @@ h1, h2 {
     font-weight: 700;
     line-height: 1.2;
     padding: 35px;
-    margin-top: 50px;
+    margin-top: 90px;
     width: 70%;
     text-transform: capitalize;
 }
 
 #faq h1 {
     font-size: 2.8rem;
-    margin-top: 90px;
+    margin-top: 120px;
     width: 70%;
 }
 
@@ -81,7 +81,7 @@ img {
     color: #fff;
     opacity: 0.8;
     width: 100%;
-    height: 70px;
+    height: 90px;
     position: fixed;
     top: 0px;
     padding: 0 30px;
@@ -94,12 +94,18 @@ img {
 
 .navbar a {
     color: #fff;
-    padding: 10px 20px;
-    margin: 0 5px;
+    padding: 10px;
+    margin: 15px;
 }
 
 .navbar a:hover {
     border-bottom: rgb(245, 61, 51) 2px solid;
+    padding-bottom: 3px;
+}
+
+.navbar .logo a:hover {
+    border-bottom: none;
+    opacity: 0.8;
 }
 
 .navbar ul {
@@ -109,16 +115,22 @@ img {
 .navbar .logo {
     font-weight: 400;
     color: #fff;
-    font-size: 1.9rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .navbar .logo span i {
     color: #fff;
+    
+
 }
 
 .navbar .logo span {
     color: rgb(245, 61, 51);
 } 
+
 
 
 /* Header */
@@ -265,6 +277,7 @@ img {
     font-weight: bold;
 }
 
+
 /* Post */
 .post {
     padding: 50px 30px;
@@ -322,37 +335,64 @@ img {
 
 /* Media Queries: Mobile */
 @media(max-width: 1000px) {
-    .hero .blog {
-        background: url('../images/home/blog.jpg') no-repeat center center/cover;
-        height: 20vh;
+ 
+    .hero {
+        display: flex;
+        align-content: center;
     }
 
     .navbar {
+        opacity: 1;
+        background-color: #333;
+        color: #fff;
+        height: 150px;
+        /* position: fixed; */
+        /* padding: 0 30px; */
+    } 
+
+    .navbar .top {
+        background-color: #333;
+    }
+
+    .navbar ul {
+        display: flex;
         flex-direction: column;
-        height: 18%;
-        padding: 40px;
-    }
-
-    .navbar a {
-        padding: 10px 10px;
-        margin: 0 3px;  
-        display: block;
-    }
-
-    .navbar.top {
-        background: transparent; 
+        font-size: 1rem;
+        margin: 8px;
+        padding-bottom: 15px;
+        padding-top: 15px;
     }
 
     .navbar .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #fff;
         font-weight: 300;
+        font-size: 2rem;
+        /* position: relative; */
+        /* top: 31px;
+        left: -45px; */
+    }
+
+    .logo span i {
         color: #fff;
         font-size: 2rem;
+        /* position: relative;
+        top: 31px;
+        left: -45px; */
+    }
+    
+    .logo span {
+        color: rgb(245, 61, 51);
+    } 
+
+    .navbar a {
+        padding: 10px;
+        margin: 5px;
     }
 
     .content h1, #faq h1, #pricing h1, .content h3, .btn {
-        /* font-size: 1.6rem;
-        display: block;
-        margin-top: 60px; */
         display: none;
     }
 
@@ -368,6 +408,47 @@ img {
     .team img {
         width: 70%;
     }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: auto;
+        color: white;
+        background-color: #333;
+        opacity: 0.8;
+        font-size: 1rem;
+        margin: 20px;
+        border-radius: 10px;
+      } 
+
+    .testimonial h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 15px;
+        padding: 15px;
+      }
+
+    /* #about-me .test-container {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .testimonial .smaller {
+        font-size: 1rem;
+        padding: 10px;
+      }
+      
+      #about-me .flex-items .client {
+        font-size: 13.5px;
+        color: white;
+      }
+
+      #contact .my-info {
+        font-size: 13px;
+      }
 }
 
 
