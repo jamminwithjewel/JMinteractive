@@ -123,15 +123,11 @@ img {
 
 .navbar .logo span i {
     color: #fff;
-    
-
 }
 
 .navbar .logo span {
     color: rgb(245, 61, 51);
 } 
-
-
 
 /* Header */
 .hero {
@@ -315,6 +311,9 @@ img {
     justify-content: center;
     text-align: center;
     height: 200px;
+    width: 100%;
+    background-color: #333;
+    flex-wrap: wrap;
 }
 
 .footer a {
@@ -328,8 +327,10 @@ img {
 .footer .social > * {
     margin-right: 30px;
     color: #fff;
+    background-color: #333;
     top: 0%;
-    right: 180%;
+    right: 180%; 
+    width: 100%;
 }
 
 .footer p {
@@ -339,7 +340,7 @@ img {
 
 
 /* Media Queries: Mobile */
-@media(max-width: 1000px) {
+@media(max-width: 1020px) {
  
     .hero {
         display: flex;
@@ -350,22 +351,19 @@ img {
         opacity: 1;
         background-color: #333;
         color: #fff;
-        height: 150px;
-        /* position: fixed; */
-        /* padding: 0 30px; */
+        height: 200px;
     } 
 
     .navbar .top {
-        background-color: #333;
+        background: #333;
     }
 
     .navbar ul {
         display: flex;
         flex-direction: column;
         font-size: 1rem;
-        margin: 8px;
-        padding-bottom: 15px;
-        padding-top: 15px;
+        margin: 10px;
+        padding: 10px;
     }
 
     .navbar .logo {
@@ -375,9 +373,6 @@ img {
         color: #fff;
         font-weight: 300;
         font-size: 2rem;
-        /* position: relative; */
-        /* top: 31px;
-        left: -45px; */
     }
 
     .logo span i {
@@ -392,10 +387,6 @@ img {
         color: rgb(245, 61, 51);
     } 
 
-    .navbar a {
-        padding: 10px;
-        margin: 5px;
-    }
 
     .content h1, #faq h1, #pricing h1, .content h3, .btn {
         display: none;
@@ -427,7 +418,7 @@ img {
         font-size: 1rem;
         margin: 20px;
         border-radius: 10px;
-      } 
+    } 
 
     .testimonial h3 {
         font-size: 1.2rem;
@@ -436,40 +427,46 @@ img {
         padding: 15px;
       }
 
-    /* #about-me .test-container {
-        display: flex;
-        flex-direction: column;
-    } */
-
     .testimonial .smaller {
         font-size: 1rem;
         padding: 10px;
       }
       
-      #about-me .flex-items .client {
+    #about-me .flex-items .client {
         font-size: 13.5px;
         color: white;
-      }
-
-      #contact .my-info {
-        font-size: 13px;
-      }
     }
 
-      @media (max-width: 625px) {
-        /* heart logo */
-        #heart i {
-            display: none;
-        }
+    #contact .my-info {
+        font-size: 13px;
+    }
+} 
 
-        .btn-outline {
-            background: #333;
-            font-size: 12px;
-            font-weight: bold;
-            margin-top: 30px;
-            
-          }
+@media (max-width: 525px) {
+    /* heart logo */
+    #heart i {
+        display: none;
+    }
+
+    .btn-outline {
+        background: #333;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 30px;  
+    }
+
+    .btn-policy {
+        cursor: pointer;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+        background-color: rgb(245, 61, 51);
+        border-radius: 5px;
+        margin: 20px;
+        font-size: 14px;
+        text-transform: uppercase;
       }
+}
 
 
 
