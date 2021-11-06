@@ -42,12 +42,14 @@ h1, h2 {
     font-size: 2.8rem;
     margin-top: 120px;
     width: 70%;
+    line-height: 1.2;
 }
 
 #pricing h1 {
     font-size: 2.8rem;
     margin-top: 95px;
     width: 70%;
+    line-height: 1.2;
 }
 
 .content h3 {
@@ -147,13 +149,13 @@ img {
     padding: 0 20px;
 }
 
-.hero .content p {
+/* .hero .content h3 {
     font-size: 1.4rem;
     font-weight: 800;
-    /* max-width: 800px; */
+    max-width: 800px;
     margin: 20px 0 30px;
-    width: 75%;
-}
+    width: 75%; 
+} */
 
 .hero::before {
   content: '';
@@ -182,7 +184,9 @@ img {
 
 .icons h3 {
     font-weight: bold;
-    margin-bottom: 15px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .icons i {
@@ -194,28 +198,22 @@ img {
     margin-bottom: 20px; 
 }
 
-.cases img:hover {
+/* .cases img:hover {
     opacity: 0.7;
 }
 
 .team img {
     border-radius: 50%;
-}
+} */
 
 
 /* heart logo */
-#heart i {
+#heart i, .heart i {
     font-size: 2rem;
     font-weight: 400;
 }
 
-.heart i {
-    font-size: 2rem;
-    font-weight: 400;
-}
- 
-
-/* Callback form */
+/* Form Info */
 .callback-form {
     width: 100%;
     padding: 20px 0;
@@ -223,11 +221,11 @@ img {
 
 .callback-form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .callback-form .form-control {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .callback-form .my-info {
@@ -255,11 +253,6 @@ img {
     outline-color: rgb(245, 61, 51);
 }
 
-.callback-form .btn {
-    padding: 12px 0;
-    margin-top: 20px;
-}
-
 .column textarea {
     outline: none;
     font-size: inherit;
@@ -271,16 +264,16 @@ img {
     padding: 20px;
   }
 
-.form-control #submit {
+/* .form-control #submit {
     padding-bottom: 40px;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
-}
+} */
 
 
-/* Post */
-.post {
+/* post */
+/* .post {
     padding: 50px 30px;
 }
 
@@ -300,7 +293,7 @@ img {
     border-radius: 50%;
     display: block;
     margin: 0 auto 30px;
-}
+}  */
 
 
 /* Footer */
@@ -309,34 +302,30 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center; 
     height: 200px;
     width: 100%;
     background-color: #333;
     flex-wrap: wrap;
 }
 
-.footer a {
-    color: #333;
-}
 
-.footer a:hover {
+/* .footer a:hover {
     color: rgb(245, 61, 51);
-}
+} */
 
 .footer .social > * {
     margin-right: 30px;
     color: #fff;
     background-color: #333;
     top: 0%;
-    right: 180%; 
+    right: 180%;  
     width: 100%;
 }
 
 .footer p {
-    /* text-transform: uppercase; */
     font-size: 15px;
-}
+} 
 
 
 /* Media Queries: Mobile */
@@ -347,16 +336,16 @@ img {
         align-content: center;
     }
 
+    .hero.blog {
+      background: none;
+    }
+
     .navbar {
         opacity: 1;
         background-color: #333;
         color: #fff;
-        height: 200px;
+        height: 23vh;
     } 
-
-    .navbar .top {
-        background: #333;
-    }
 
     .navbar ul {
         display: flex;
@@ -378,15 +367,11 @@ img {
     .logo span i {
         color: #fff;
         font-size: 2rem;
-        /* position: relative;
-        top: 31px;
-        left: -45px; */
     }
     
     .logo span {
         color: rgb(245, 61, 51);
     } 
-
 
     .content h1, #faq h1, #pricing h1, .content h3, .btn {
         display: none;
@@ -401,36 +386,32 @@ img {
         max-width: 100%;
     }
 
-    .team img {
-        width: 70%;
-    }
-
     .testimonial {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 400px;
-        height: auto;
+        width: 525px;
+        height: fit-content;
         color: white;
         background-color: #333;
         opacity: 0.8;
         font-size: 1rem;
         margin: 20px;
-        border-radius: 10px;
-    } 
+        border-radius: 10px; 
+    }
 
     .testimonial h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: bold;
         margin: 15px;
         padding: 15px;
-      }
+    } 
 
     .testimonial .smaller {
         font-size: 1rem;
         padding: 10px;
-      }
+    }       
       
     #about-me .flex-items .client {
         font-size: 13.5px;
@@ -443,6 +424,19 @@ img {
 } 
 
 @media (max-width: 525px) {
+    .navbar ul {
+        margin: -50px;
+    }
+
+    .navbar .logo {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        color: #fff;
+        font-size: 1.5rem;
+        margin: -30px;
+    }
+
     /* heart logo */
     #heart i {
         display: none;
@@ -465,7 +459,10 @@ img {
         margin: 20px;
         font-size: 14px;
         text-transform: uppercase;
-      }
+    }
+    .hero .content {
+        margin: 0px;
+    }
 }
 
 

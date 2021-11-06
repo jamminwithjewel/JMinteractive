@@ -189,7 +189,6 @@
 
 
 /* Section Header */
-
 .section-header {
   padding: 30px;
   display: flex;
@@ -208,9 +207,9 @@
   padding: 20px 20px 40px;
 }
 
-/* Flex Grid */
 
-.flex-grid .row {
+/* Flex Grid */
+/* .flex-grid .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
@@ -221,7 +220,8 @@
   max-width: 25%;
   padding: 0 4px;
   margin: auto;
-}
+}  */
+
 
 /* services page */
 .column .note {
@@ -234,7 +234,7 @@
 }
 
 /* cards */
-.masthead {
+/* .masthead {
   background-color: #333;
   height: 105px;
 }
@@ -243,7 +243,7 @@
   color: #fff;
   display: flex;
   justify-content: center;
-}
+}  */
  
 .card-row {
   box-sizing: border-box;
@@ -267,6 +267,71 @@
   background: #333;
   color: #bbb;
 }
+
+/* testimonials */
+#about-me {
+  background-color: #bbb;
+  padding: 20px;
+  text-align: center;
+}
+
+#bg-dark h1 {
+  color:black;
+  font-weight: bolder;
+  line-height: 1.2;
+  padding: 15px;
+  font-size: 2.2rem;
+  text-decoration: solid underline rgb(245, 61, 51);
+  text-underline-offset: 1rem;
+  text-decoration-thickness: 4px;
+}
+
+#bg-dark h3 {
+  color: black;
+  font-weight: bolder;
+  line-height: 1.2;
+  font-size: 1.2rem;
+}
+
+#about-me .flex-items {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  color: white;
+  background-color: #333;
+  opacity: 0.8;
+  font-size: 1rem;
+  margin: 20px;
+  border-radius: 10px;
+} 
+
+.testimonial h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.testimonial .smaller {
+  font-size: 16px;
+}
+
+#about-me .flex-items .client {
+  font-size: 13px;
+  color: white;
+}
+
 
 /* flip card container - holds the cards inside */
 .flip-card {
@@ -395,69 +460,8 @@
   }
 }   */
 
-/* testimonials */
-#about-me {
-  background-color: #bbb;
-  padding: 20px;
-  text-align: center;
-}
 
-#bg-dark h1 {
-  color:black;
-  font-weight: bolder;
-  line-height: 1.2;
-  padding: 15px;
-  font-size: 2.2rem;
-  text-decoration: solid underline rgb(245, 61, 51);
-  text-underline-offset: 1rem;
-  text-decoration-thickness: 4px;
-}
 
-#bg-dark h3 {
-  color: black;
-  font-weight: bolder;
-  line-height: 1.2;
-  font-size: 1.2rem;
-}
-
-#about-me .flex-items {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; 
-  align-items: center; 
-  flex-wrap: wrap;
-}
-
-.testimonial {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  height: 400px;
-  color: white;
-  background-color: #333;
-  opacity: 0.8;
-  font-size: 1rem;
-  margin: 20px;
-  border-radius: 10px;
-} 
-
-.testimonial h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin: 15px;
-}
-
-.testimonial .smaller {
-  font-size: 16px;
-}
-
-#about-me .flex-items .client {
-  font-size: 13px;
-  color: white;
-}
 
 
 
