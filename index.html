@@ -75,6 +75,7 @@
 </header>
 
 <main>
+
     <!-- About: Icons -->
     <section id="about" class="icons bg-light">
         
@@ -452,22 +453,23 @@
         }
     };
 
-// Smooth Scrolling - (via jQuery)
+    // Smooth Scrolling - (via jQuery)
+    $('#navbar a, .btn').on('click', function (e) {
+        if (this.hash !== '') {
+            e.preventDefault();
 
-// $('#navbar a, .btn').on('click', function (e) {
-//         if (this.hash !== '') {
-//             e.preventDefault();
+            const hash = this.hash;
 
-//             const hash = this.hash;
-
-//             $('html, body').animate({
-//             scrollTop: $(hash).offset().top - 100, 
-//           },
-//           800
-//         );
-// });
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 100, 
+            },
+            800
+            );
+        }  
+    });
 
 </script>
   
 </body>
+
 </html>

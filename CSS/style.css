@@ -149,14 +149,6 @@ img {
     padding: 0 20px;
 }
 
-/* .hero .content h3 {
-    font-size: 1.4rem;
-    font-weight: 800;
-    max-width: 800px;
-    margin: 20px 0 30px;
-    width: 75%; 
-} */
-
 .hero::before {
   content: '';
   position: absolute;
@@ -198,20 +190,13 @@ img {
     margin-bottom: 20px; 
 }
 
-/* .cases img:hover {
-    opacity: 0.7;
-}
-
-.team img {
-    border-radius: 50%;
-} */
-
 
 /* heart logo */
 #heart i, .heart i {
     font-size: 2rem;
     font-weight: 400;
 }
+
 
 /* Form Info */
 .callback-form {
@@ -264,37 +249,6 @@ img {
     padding: 20px;
   }
 
-/* .form-control #submit {
-    padding-bottom: 40px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight: bold;
-} */
-
-
-/* post */
-/* .post {
-    padding: 50px 30px;
-}
-
-.post h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: #ccc solid 1px;
-}
-
-.post .meta {
-    margin-bottom: 30px;
-}
-
-.post img {
-    width: 300px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 30px;
-}  */
-
 
 /* Footer */
 .footer {
@@ -309,10 +263,9 @@ img {
     flex-wrap: wrap;
 }
 
-
-/* .footer a:hover {
+.footer a:hover {
     color: rgb(245, 61, 51);
-} */
+}
 
 .footer .social > * {
     margin-right: 30px;
@@ -326,6 +279,35 @@ img {
 .footer p {
     font-size: 15px;
 } 
+
+ 
+@media (max-width: 1350px) {
+    .footer.bg-dark {
+      width: 108%;
+    }
+  
+    .card-row {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center; 
+      justify-content: center; 
+      height: fit-content; 
+    } 
+  
+    .flip-card-front {
+      -webkit-backface-visibility: hidden; 
+      backface-visibility: hidden;
+      transform: none;
+    } 
+  
+    .flip-card-inner {
+      position: absolute;
+      width: 200px;
+      padding: 0 5px; 
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    } 
+  } 
 
 
 /* Media Queries: Mobile */
@@ -462,6 +444,10 @@ img {
     }
     .hero .content {
         margin: 0px;
+    }
+
+    body, html {
+        overflow-x: hidden;
     }
 }
 

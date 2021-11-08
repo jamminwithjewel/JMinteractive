@@ -1,26 +1,26 @@
 /* Text Colors */
 
 .text-primary {
-    color: rgb(245, 61, 51);
+  color: rgb(245, 61, 51);
 }
 
 .text-secondary {
-    color: #bbb;
+  color: #bbb;
 }
 
 /* Buttons */
 
 .btn {
-    cursor: pointer;
-    display: inline-block;
-    padding: 15px 35px;
-    color: #fff;
-    background-color: rgb(245, 61, 51);
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin: 10px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px 35px;
+  color: #fff;
+  background-color: rgb(245, 61, 51);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 10px;
 }
 
 .btn:hover {
@@ -47,7 +47,7 @@
   color: #333;
 }
 
-/* Policy page btns - container */
+/* Policy pg - buttons container */
 .center-policy {
   display: flex;
   justify-content: center;
@@ -70,16 +70,6 @@
   text-transform: uppercase;
 }
 
-/* Services page - Btns */
-.btn-outline {
-  background: #333;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-top: 30px;
-  padding: 10px 40px;
-  text-transform: uppercase;
-}
 
 #inline-btn {
   display: flex;
@@ -187,24 +177,14 @@
   padding-bottom: 15px;
 }
 
-
-/* Section Header */
-.section-header {
-  padding: 30px;
+/* services page */
+.column .note {
+  font-size: 14px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-}
-
-.section-header h2 {
-  font-size: 40px;
-  margin: 20px 0;
-}
-
-.section-padding {
-  padding: 20px 20px 40px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  font-weight: 300;
 }
 
 
@@ -223,17 +203,6 @@
 }  */
 
 
-/* services page */
-.column .note {
-  font-size: 14px;
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-  padding-top: 10px;
-  font-weight: 300;
-}
-
-/* cards */
 /* .masthead {
   background-color: #333;
   height: 105px;
@@ -245,6 +214,8 @@
   justify-content: center;
 }  */
  
+
+/* cards */
 .card-row {
   box-sizing: border-box;
   display: flex;
@@ -252,8 +223,110 @@
   justify-content: flex-start; 
   align-items: center; 
   flex-wrap: wrap;
+  background: transparent;
 }
 
+.card-column #black a {
+  background: #333;
+  color: #bbb;
+}
+
+/* flip card container - holds the cards inside */
+.flip-card {
+  background-color: transparent;
+  width: 400px; 
+  height: 400px;
+  perspective: 1000px;
+  margin: 30px;
+}
+
+/* Container - positions front & back side  */
+.flip-card-inner {
+  position: relative;
+  width: 420px;
+  height: 400px;
+  text-align: center;
+  /* transition: transform 0.6s;
+  transform-style: preserve-3d; */
+  border-radius: 10px;
+}
+
+/* Style the front side of card (fallback if image is missing) */
+.flip-card-front {
+  position: absolute;
+  width: 420px;
+  height: 400px;
+  font-size: 16px;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+
+.flip-card-inner .red {
+  background-color: rgb(245, 61, 51);
+  color: white;
+}
+
+.flip-card-inner .red h2 {
+  border-bottom: white 3px solid;
+  padding-bottom: 10px;
+}
+
+.flip-card-inner .grey {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-inner .grey h2 {
+  border-bottom: black 3px solid;
+  padding-bottom: 10px;
+}
+
+.flip-card-inner .black, .black {
+  background-color: #333;
+  color: white;
+}
+
+.flip-card-inner .black h2 {
+  border-bottom: white 3px solid;
+  padding-bottom: 10px;
+}
+
+.flip-card-front h2 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding-bottom: 5px;
+  border-bottom: #333 2px solid;
+  line-height: 30px;
+}
+
+.flip-card-front h4 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 3px;
+  line-height: 28px;
+} 
+
+.card-column .a, .card-column .b, .bg-light {
+  list-style-type: square;
+  text-align: left;
+  padding: 15px;
+}
+
+.card-column .center, .card-column .center {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+} 
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+} 
+
+/* 
 .card-column a {
   color: #fff;
   font-size: 13px;
@@ -261,12 +334,8 @@
   background: #bbb;
   text-transform: uppercase;
   padding: 5px;
-}
+} */
 
-.card-column #black a {
-  background: #333;
-  color: #bbb;
-}
 
 /* testimonials */
 #about-me {
@@ -333,124 +402,6 @@
 }
 
 
-/* flip card container - holds the cards inside */
-.flip-card {
-  background-color: transparent;
-  width: 400px; 
-  height: 400px;
-  perspective: 1000px;
-  margin: 30px;
-}
-
-/* Container - positions front & back side  */
-.flip-card-inner {
-  position: relative;
-  width: 420px;
-  height: 400px;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  border-radius: 5px;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  position: absolute;
-  width: 420px;
-  height: 400px;
-  font-size: 16px;
-  padding: 25px;
-  border-radius: 5px;
-}
-
-.flip-card-inner .red {
-  background-color: rgb(245, 61, 51);
-  color: white;
-}
-
-.flip-card-inner .red h2 {
-  border-bottom: white 3px solid;
-  padding-bottom: 10px;
-}
-
-.flip-card-inner .grey {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-inner .grey h2 {
-  border-bottom: black 3px solid;
-  padding-bottom: 10px;
-}
-
-.flip-card-inner .black, .black {
-  background-color: #333;
-  color: white;
-}
-
-.flip-card-inner .black h2 {
-  border-bottom: white 3px solid;
-  padding-bottom: 10px;
-}
-
-.flip-card-front h2 {
-  font-size: 1.2rem;
-  font-weight: bolder;
-  padding-bottom: 5px;
-  border-bottom: #333 2px solid;
-  line-height: 30px;
-}
-
-.flip-card-front h4 {
-  font-size: 16px;
-  font-weight: bold;
-  padding-top: 3px;
-  line-height: 28px;
-} 
-
-.card-column .a, .card-column .b, .bg-light {
-  list-style-type: square;
-  text-align: left;
-  padding: 15px;
-}
-
-.card-column .center, .card-column .center {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-} 
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 15px;
-  text-align: center;
-} 
-
-@media (max-width: 1364px) {
-  .card-row {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
-  }
-
-  .flip-card-front {
-    -webkit-backface-visibility: hidden; 
-    backface-visibility: hidden;
-    transform: none;
-  }
-
-  .flip-card-inner {
-    position: absolute;
-    width: 200px;
-    padding: 0 5px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    /* transform: none; */
-  }
-} 
 
 /* Responsive columns */
 /* @media screen and (max-width: 400px) {
@@ -459,11 +410,6 @@
     display: block;
   }
 }   */
-
-
-
-
-
 
 
 /* my media queries */
