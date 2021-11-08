@@ -38,8 +38,22 @@
 }
 
 .btn-dark, .bg-dark {
-  background: #333;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 15px 35px;
   color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  margin: 35px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-dark-sq { 
+  color: #f4f4f4;
+  background: #333;
 }
 
 .btn-light, .bg-light {
@@ -326,8 +340,8 @@
   text-align: center;
 } 
 
-/* 
-.card-column a {
+ 
+/* .card-column a {
   color: #fff;
   font-size: 13px;
   border-radius: 3px;
