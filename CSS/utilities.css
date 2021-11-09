@@ -78,12 +78,11 @@
   color: #fff;
   background-color: rgb(245, 61, 51);
   border-radius: 5px;
-  margin: 35px;
+  margin: 45px;
   font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 
 #inline-btn {
   display: flex;
@@ -260,12 +259,10 @@
   width: 420px;
   height: 400px;
   text-align: center;
-  /* transition: transform 0.6s;
-  transform-style: preserve-3d; */
   border-radius: 10px;
 }
 
-/* Style the front side of card (fallback if image is missing) */
+/* Style the front side of card */
 .flip-card-front {
   position: absolute;
   width: 420px;
@@ -274,7 +271,6 @@
   padding: 25px;
   border-radius: 5px;
 }
-
 
 .flip-card-inner .red {
   background-color: rgb(245, 61, 51);
