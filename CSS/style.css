@@ -234,7 +234,8 @@ img {
 }
 
 .callback-form .my-info {
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 700;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,7 +269,7 @@ img {
     width: 100%;
     padding: 20px;
     text-align: center;
-  }
+}
 
 
 /* Footer */
@@ -436,7 +437,7 @@ img {
     }
 
     #contact .my-info {
-        font-size: 13px;
+        font-size: 14px;
     }
 } 
 
