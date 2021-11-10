@@ -38,6 +38,14 @@ h1, h2 {
     text-transform: capitalize;
 }
 
+#services h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 140px;
+    width: 70%;
+    line-height: 1.2;
+}
+
 #faq h1 {
     font-size: 2.8rem;
     font-weight: 700;
@@ -383,15 +391,7 @@ img {
         text-align: center;
     }
 
-    .content h1 {
-        font-size: 2.5rem;
-        font-weight: 400;
-        margin-top: 100px;
-        width: 90%;
-        text-transform: capitalize;
-    }
-
-    #faq h1, #pricing h1, .content h3, .btn {
+    #faq h1, #pricing h1, .content h3, .btn, .content h1 {
         display: none;
     }
 
@@ -455,7 +455,7 @@ img {
         margin: -30px;
     }
 
-    .content h1 {
+    .content h1 #head-show {
         font-size: 1.4rem;
         font-weight: 300;
         margin-top: 90px;
