@@ -382,7 +382,15 @@ img {
         text-align: center;
     }
 
-    #faq h1, #pricing h1, .content h3, .content h1, .btn {
+    .content h1 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-top: 100px;
+        width: 90%;
+        text-transform: capitalize;
+    }
+
+    #faq h1, #pricing h1, .content h3, .btn {
         display: none;
     }
 
@@ -444,6 +452,14 @@ img {
         text-align: left;
         color: #fff;
         margin: -30px;
+    }
+
+    .content h1 {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-top: 90px;
+        width: 100%;
+        text-transform: capitalize;
     }
 
     .btn-outline {
